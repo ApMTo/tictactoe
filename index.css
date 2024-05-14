@@ -1,0 +1,242 @@
+body {
+    background-color: rgb(238, 227, 203);
+}
+
+.heading {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    animation: headingOpening 2s alternate;
+}
+
+.heading img {
+    width: 300px;
+}
+
+.heading h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline;
+}
+
+
+@keyframes headingOpening {
+    0% {
+        margin-top: -250px;
+    } 
+    100% {
+        margin-top: 50px;
+    }
+}
+
+.choose {
+    display: none;
+}
+
+.choose span {
+    margin-bottom: 15px;
+}
+
+.show {
+    display: block;
+    margin-top: 20px;
+    animation: animChoose 2s alternate;
+}
+
+.show span {
+    display: block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+
+.show button {
+    display: block;
+    margin: 5px auto;
+    width: 80px;
+    padding: 7px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+
+.close {
+    color: rgb(0, 255, 0) !important;
+    font-size: 67px;
+    margin-bottom: 0px !important;
+    vertical-align: middle !important;
+    
+}
+
+.circle {
+    color: rgb(0, 255, 0) !important;
+    font-size: 67px;
+    margin-bottom: 0px !important;
+    vertical-align: middle !important;
+}
+
+.show button:hover {
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+@keyframes animChoose {
+    from{
+        opacity: 0;
+        margin-top: 50px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 20px;
+    }
+}
+
+.title {
+    text-align: center !important;
+    font-size: larger !important;
+    color: rgb(253, 0, 0) !important;
+}
+
+.start {
+   color: white;
+   width: 150px !important;
+   height: 40; 
+   animation: startAnim 0.8s alternate;
+}
+
+.startGame {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+@keyframes startAnim {
+    from {
+        opacity: 0;
+        margin-top: 50px;
+    }
+
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+.hideMain {
+    animation: hideMain 2.5s alternate;
+}
+
+@keyframes hideMain {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+table {
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    margin: 30px auto;
+}
+
+.headingTitle {
+    width: 450px;
+}
+
+td {
+    width: 33.33%; 
+    height: 33.33%; 
+    border: 1px solid black;
+    text-align: center; 
+    vertical-align: middle; 
+    font-size: 29px;
+    cursor: pointer
+}
+
+tr {
+    background-color: rgb(103, 93, 93);
+}
+
+.game {
+    display: none;
+}
+
+.starting {
+    display: block;
+    margin: 50px auto;
+    padding-top: 6px;
+    animation: gameStart 2s alternate;
+}
+
+
+@keyframes gameStart {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.timer {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.removeGame {
+    animation: endGame 2s alternate;
+}
+
+.end {
+    display: none;
+}
+
+@keyframes endGame {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+.play {
+    display: block;
+    margin: 15px auto;
+    width: 80px;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+
+.play:hover {
+    background: none;
+    border: 1px solid rgb(0, 0, 0);
+    color: black;
+}
+
+
